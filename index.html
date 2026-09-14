@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0b1630">
+<title>For Rimmi Jaanu 💙</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&family=Parisienne&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="ambient"></div>
+<div id="hearts"></div>
+
+<main class="app">
+  <section class="screen active" id="s1">
+    <div class="eyebrow">A little something from my heart</div>
+    <h1>Sorry, Rimmi Jaanu 💙</h1>
+    <p class="sub">Kabhi kabhi words kam pad jaate hain… isliye dil se likha hai.</p>
+    <div class="notes" id="notes"></div>
+    <div class="glass-note">
+      <span>💌</span>
+      <p>Sorry jaan… agar meri kisi baat se tumhara dil dukha hai, toh sach mein maaf kar dena. Tum mere liye bahut special ho. Main bas tumhari smile dekhna chahta hoon. <b>I’m really sorry, meri jaan. 💙</b></p>
+    </div>
+    <div class="music-control">
+      <button class="primary" id="musicBtn" onclick="toggleMusic()">🎵 Play Our Song <span>▶</span></button>
+      <div class="music-status" id="musicStatus">Tap once to start the song 💙</div>
+    </div>
+    <button class="primary" onclick="next()">Open My Heart <span>→</span></button>
+  </section>
+
+  <section class="screen" id="s2">
+    <div class="eyebrow">Our little gallery</div>
+    <h2>10 moments, one beautiful story 📸</h2>
+    <div class="album">
+      <div class="photo-wrap" id="photoWrap">
+        <img id="photo" src="rm1.jpg" alt="Our memory">
+        <div class="shine"></div>
+      </div>
+      <div class="photo-meta"><span id="counter">1 / 10</span><span>swipe ↔</span></div>
+    </div>
+    <div class="dots" id="dots"></div>
+    <div class="row">
+      <button class="round" id="prev">‹</button>
+      <button class="primary" id="nextPhoto">Next memory <span>→</span></button>
+      <button class="round" id="nextBtn">›</button>
+    </div>
+    <button class="ghost" onclick="next()">Skip to my feelings ↓</button>
+  </section>
+
+  <section class="screen" id="s3">
+    <div class="eyebrow">From Mehboob's heart</div>
+    <div class="letter">
+      <div class="seal">💙</div>
+      <h2>For the girl who means so much…</h2>
+      <p>Rimmi jaanu, pata hai? Tum meri life ka woh beautiful part ho jiske bina sab kuch thoda sa incomplete lagta hai. Tumhari ek smile mera mood badal sakti hai, aur tumhari ek chhoti si baat mere poore din ko special bana sakti hai. 🥺💙</p>
+      <p>Agar kabhi meri galtiyon, meri zid ya meri kisi baat se tum hurt hui ho, toh dil se <b>sorry</b>. Mera intention kabhi tumhe hurt karna nahi tha. Main perfect nahi hoon, lekin tumhare liye better banne ki poori koshish karna chahta hoon. 🫶🏻</p>
+      <p>Bas itna yaad rakhna — <b>you are precious to me.</b> Tumhari care, tumhari smile, tumhari presence… sab kuch mere liye matter karta hai. 🌙✨</p>
+      <p>So, one more time… <b>Sorry jaan. I love you so, so much. 💙💋</b></p>
+      <div class="signature">Always yours,<br><span>Mehboob</span></div>
+    </div>
+    <button class="primary" onclick="startRain()">Next, jaanu 💙 <span>→</span></button>
+  </section>
+
+  <section class="screen" id="s4">
+    <div class="rain-title">Just look up…</div>
+    <div class="rain-center">
+      <div class="pulse-heart">💙</div>
+      <h2>All my love is falling for you</h2>
+      <p>10 seconds of love… just for you 💋</p>
+    </div>
+  </section>
+
+  <section class="screen" id="s5">
+    <div class="gift-stage">
+      <div class="eyebrow">A tiny gift for you</div>
+      <div class="gift" id="gift" onclick="openGift()">
+        <div class="gift-lid"></div><div class="gift-box"></div><div class="ribbon-v"></div><div class="ribbon-h"></div>
+      </div>
+      <p id="tap">Tap the gift 🎁</p>
+      <div class="gift-letter" id="giftLetter">
+        <div class="mini-sparkle">✦</div>
+        <h2>For my Rimmi Jaanu 💙</h2>
+        <p>Tum meri favourite feeling ho. Tumhare saath har chhoti cheez bhi special lagti hai. Thank you for being you. 🥺🫶🏻</p>
+        <button class="primary" onclick="next()">Meet your teddy 🧸 <span>→</span></button>
+      </div>
+    </div>
+  </section>
+
+  <section class="screen" id="s6">
+    <div class="eyebrow">Your personal teddy delivery</div>
+    <div class="teddy-area">
+      <div class="teddy">🧸</div>
+      <div class="speech" id="speech">I love you Rimmi Jaanu 💙</div>
+      <div class="speech second" id="speech2">I love you darling 💋</div>
+    </div>
+    <p class="teddy-sub">He has something important to say…</p>
+    <button class="primary" onclick="next()">One last thing… <span>→</span></button>
+  </section>
+
+  <section class="screen" id="s7">
+    <div class="final-card">
+      <div class="tiny-heart">💙</div>
+      <h2>Sorry, baby 🥺</h2>
+      <p>Gussa thoda kam kar do na… aur apni woh cute si smile wapas de do. Main tumhe bahut zyada love karta hoon. 💙🫶🏻</p>
+      <div class="big-love">I Love You Baby 🐥🍼</div>
+      <div class="final-line">No matter what, you’re special to me. ✨</div>
+    </div>
+    <div class="ending">made by mehboob</div>
+  </section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
